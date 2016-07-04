@@ -406,6 +406,15 @@ removal."
               (buffer-string)))
            (t (concat "/sudo:root@localhost:" fname))))))
 
+;; from https://www.emacswiki.org/emacs/SudoSave
+(defun spacemacs/sudo-save ()
+  (interactive)
+  (if (not (file-writable-p buffer-file-name))
+      (if (not buffer-file-name)
+	  (write-file (concat "/sudo:root@localhost:" (ido-read-file-name "File:")))
+	(write-file (concat "/sudo:root@localhost:" buffer-file-name)))
+    (write-file buffer-file-name)))
+
 ;; check when opening large files - literal file open
 (defun spacemacs/check-large-file ()
   (let* ((filename (buffer-file-name))

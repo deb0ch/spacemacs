@@ -182,6 +182,7 @@
   "fR" 'spacemacs/rename-current-buffer-file
   "fS" 'evil-write-all
   "fs" 'save-buffer
+  "fu" 'spacemacs/sudo-save
   "fvd" 'add-dir-local-variable
   "fvf" 'add-file-local-variable
   "fvp" 'add-file-local-variable-prop-line
