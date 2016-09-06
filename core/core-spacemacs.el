@@ -119,6 +119,7 @@ the final step of executing code in `emacs-startup-hook'.")
     ;; in order to correctly display the logo
     (spacemacs|do-after-display-system-init
      (kill-buffer (get-buffer spacemacs-buffer-name))
+     (setq spacemacs-buffer--last-width nil)
      (spacemacs-buffer/goto-buffer)))
   (setq initial-buffer-choice nil)
   (setq inhibit-startup-screen t)
