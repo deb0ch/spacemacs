@@ -348,6 +348,7 @@
    ("R" spacemacs/rename-current-buffer-file "Rename...")
    ("S" evil-write-all "Save all")
    ("s" save-buffer "Save")
+   ("u" 'spacemacs/sudo-save)
    ("C"  "Convert"
     ("d" spacemacs/unix2dos "Convert to DOS")
     ("u" spacemacs/dos2unix "Convert to UNIX"))
