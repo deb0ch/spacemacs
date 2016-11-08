@@ -337,4 +337,14 @@
         which-key-allow-evil-operators t)
 
   (which-key-mode)
-  (spacemacs|diminish which-key-mode " Ⓚ" " K"))
+  (spacemacs|diminish which-key-mode " Ⓚ" " K")
+
+  (setq which-key-binding-filter-function
+        (lambda (cell prefix)
+          (cond
+           ((string-match "select-window-1" (cdr cell)) '("0 .. 9" . "window 0 .. 9"))
+           ((string-match "select-window-[0-9]" (cdr cell)) nil)
+           ((string-match "buffer-to-window-1" (cdr cell)) '("0 .. 9" . "buffer-to-window 0 .. 9"))
+           ((string-match "buffer-to-window-[0-9]" (cdr cell)) nil)
+           (cell))))
+)
