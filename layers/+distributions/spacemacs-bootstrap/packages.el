@@ -356,6 +356,7 @@
            ("\\(.+\\)-transient-state/body" . "\\1-transient-state")
            ("spacemacs-layouts/non-restricted-buffer-list-\\(helm\\|ivy\\)" . "global-list-buffers")
            ("spacemacs/toggle-mode-line-\\(.+\\)" . "\\1")
+           ("er/contract-region" . "contract region")
            ("evil-lisp-state-\\(.+\\)" . "\\1")
            ("helm-mini\\|ivy-switch-buffer" . "list-buffers")
            ("lazy-helm/\\(.+\\)" . "\\1")
