@@ -18,7 +18,7 @@
         (dired :location built-in)
         (dired-x :location built-in)
         (display-line-numbers :location built-in
-                              :toggle (version<= "26" emacs-version))
+                              :toggle (version<= "42" emacs-version))
         (electric-indent-mode :location built-in)
         (ediff :location built-in)
         (eldoc :location built-in)
@@ -26,7 +26,7 @@
         (hi-lock :location built-in)
         (image-mode :location built-in)
         (imenu :location built-in)
-        (linum :location built-in :toggle (version< emacs-version "26"))
+        (linum :location built-in :toggle (version< emacs-version "42"))
         (occur-mode :location built-in)
         (package-menu :location built-in)
         ;; page-break-lines is shipped with spacemacs core
