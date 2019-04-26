@@ -385,7 +385,8 @@
   "FB" 'spacemacs/display-buffer-other-frame
   "Fo" 'other-frame
   "FO" 'spacemacs/dired-other-frame
-  "Fn" 'make-frame)
+  "Fn" 'make-frame
+  "Fm" 'spacemacs/toggle-maximize-frame)
 ;; help -----------------------------------------------------------------------
 (defalias 'emacs-tutorial 'help-with-tutorial)
 (spacemacs/set-leader-keys
